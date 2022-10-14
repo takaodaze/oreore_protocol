@@ -7,6 +7,8 @@ RUN apt-get install -y iproute2
 RUN apt-get install -y iputils-ping
 RUN apt-get install -y netcat-openbsd
 
+# TODO: root ユーザーでしか操作できないので、一般ユーザーを登録する操作をいれたい（sudo コマンドをコピペできないのがめんどくさい）
+
 # japanese input
 RUN apt-get install -y language-pack-ja-base language-pack-ja
 ENV LANG=ja_JP.UTF-8
